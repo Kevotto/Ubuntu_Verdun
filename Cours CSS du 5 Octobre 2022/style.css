@@ -1,0 +1,121 @@
+.space-01{ /*
+    Margin: 3px(vertical), 2px(horizontal); 
+    / Margin:3px;(toutes directions) 
+    / Margin: 3px(haut), 2px(horizontal), 1px(bas);
+    / Margin: 4px(haut), 3px(droite), 2px(bas), 1px(gauche);
+    */
+    margin: 0px 10px;
+    color: red;
+}
+  
+/*POur retrouver la valeur initiale des padding et margin, il faut utiliser INITIAL
+padding/margin: initial;
+*/
+
+.space-02{
+    border: 2px solid black;
+    padding: 1px;   /*Padding-left, rigth, bottom, top = a choisir entre chacune des direction en fonction des besoin*/
+}
+
+p{
+    line-height: 30px;
+}
+
+.space-03{
+    margin: 2em;
+    color: lime;
+}
+
+.space-04{
+    text-indent: 3em;
+}
+
+.color-red{
+    color: red;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.rectangle{
+    height: 50px;
+    width: 10%;
+    background-color: blue;
+}
+
+.margin-div{
+    margin-top: 10px;
+}
+
+.div-mother-width{
+    width: 50%;
+    border: 1px solid black;
+}
+
+.rectangle-viewport{
+    background-color: orange;
+    height: 50px;
+    width: 50vw;
+}
+
+.b-radius{
+    border-radius: 25%;
+}
+
+.b-radius-rond{
+    border-radius: 50%;
+}
+
+.b-circle{
+    border-radius: 50%;
+}
+
+.square-abs{
+    position: absolute;
+    top: 200px;
+    right: 50%;
+}
+
+.mother-relative{
+    border: 1px solid black;
+
+}
+
+.circle-relative{
+    position: relative;
+    bottom: 13px;
+    left:13px;
+}
+
+.circle-relative-02{
+    position: relative;
+
+    left:calc(50% - 25px);
+}
+
+.menu{
+    background-color: darkkhaki;
+    height: 75px;
+    position: sticky;
+    top: 0;
+}
+
+.deep{
+    z-index: -1;
+}
+
+.transform-square-translation{
+    transform: translate(10px);
+}
+
+.transform-square-rotation{
+    transform: rotate(45deg);
+    background-color: olive;
+}
