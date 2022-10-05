@@ -1,0 +1,59 @@
+*{
+    font-weight: bolder;
+}
+
+h2, h1, h3, h4{
+    font-weight: normal;
+}
+
+ul > li{
+    color: lightsalmon;
+    background-color: yellow;
+}
+
+div + p{
+    color: rebeccapurple;
+}
+
+div p{
+    color: lime;
+}
+
+.lien{
+    text-decoration: none;
+    color: red;
+}
+
+a:hover{
+    color: yellow;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter{
+color: #c39797;
+}
+
+#super-titre::before{
+    content:"Chat";
+    color:   #8895c2;
+}
+
+#super-titre::after{
+    content:"Chien";
+    color:   #8895c2 !important;  
+}
+
+input:checked + label{
+    background-color: cyan;
+}
+
+input:checked{
+    color: blueviolet;
+}
+
+#papa :last-child{
+    color:#40836c;
+}
+
+#maman :nth-child(2){
+    color:#40836c;
+}
