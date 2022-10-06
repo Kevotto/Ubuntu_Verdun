@@ -41,9 +41,13 @@ form{
 }
 
 .petitCubes{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
+
+.enfantPetitCube{
+    display: inline-block;
+}
+
 
 label{
     font-size: large;
@@ -107,16 +111,15 @@ input{
 }
 
 .chasseur{
-    margin-left: 80%;
+    margin-left:83%;
 }
 
-.retroChasseur{
-    
-    display:block;
-    height: 15%;
+.retroChasseur{   
+    display:block;    height: 15%;
     width: 15%;
     margin-left: auto;
     margin-right: auto;
+    padding: unset;
 }
 
 .smiley{
