@@ -302,3 +302,110 @@ myFirstArray.splice(1,1);
 ConsLog();
 
 let banane = "une banane";
+
+console.log
+
+//LES OBJETS
+
+var voiture = {
+    marque: "renault",
+    anneeFab: "2005",
+    puissance: 125,
+
+    afficher: function(){
+        console.log("Cette voiture est une " + this.marque + " de " + this.anneeFab + " et a une puissance de " + this.puissance)
+    }
+};
+
+console.log(voiture.afficher());
+console.log(voiture.marque);
+
+//LES BOUCLES 
+
+var iteration = 0;
+
+while(iteration<7){
+    console.log("Je sais compter jusqu'à " + iteration);
+    iteration++;
+}
+
+let boucleDo = 0;
+
+//do {
+    
+//} while (condition);
+
+//forloop
+
+
+for(let i = 0; i <= 12; i++){
+    console.log("Aujourd'hui j'ai " + i + " an !");
+};
+
+for(let j = 0; j < mySecondArray.length; j++){
+    console.log(mySecondArray[j]);
+};
+
+
+function factoCrotte(){
+    let factoto = 1;
+    let operateur = 1;
+    while(operateur <= 10){
+        let result = factoto * (operateur+1);
+        
+        console.log("Resultat factorium = " + result);
+        factoto = result;
+        operateur++;
+    }
+}
+
+console.log(factoCrotte());
+
+
+function factorielle(nbr){
+	var factorielle = 1;
+	for( let k = 1; k <= nbr; k++)
+  {
+  	factorielle *= k;
+  }
+  console.log(factorielle);
+}
+
+factorielle(5);
+
+//FONCTION RECURSIVE
+
+
+function fact(nbr) 
+{
+  // Si nbr = 0 la factorielle retournera 1
+  if (nbr === 0)
+  {
+     return 1;
+  }
+  // appelez à nouveau la procédure récursive
+  return nbr * fact(nbr-1);
+}
+console.log(fact(9));
+
+console.log("Salut bébou")
+
+var tableauA = ['Jeannette', 'Alphonse', 'George', 'Ludwig'];
+var tableauB = ['Paul', 'Frédéric', 'Jacques', 'Roger'];
+
+
+function concatTableau(arrayA, arrayB)
+{
+	if(arrayA.length === arrayB.length)
+  {
+  	for(let index = 0; index < arrayB.length; index++)
+    {
+    	console.log(arrayA[index] + ' ' + arrayB[index])
+    }
+  }
+  else
+  {
+  	console.log("Les tableaux n'ont pas la même taille.")
+  }
+}
+concatTableau(tableauA,tableauB);
