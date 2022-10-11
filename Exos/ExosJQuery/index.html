@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- Input texte nomDeLeleve, prenomDeLeleve et input number Moyenne
+        Qaund on fera un bouton, envoyer, onclick affichage nom prenom et moyenne dans 
+        tableau, tout les eleves seront dans ce tableau, centrer sur lapage des  eleves
+        puis faire la moyenne de tout les eleves, les inputsmoyenne doivent être entre et
+        et si exception est, message erreur rouge ().show .hide) -->
+
+<H1>Moyenne de la classe</H1>
+
+<!-- <div>
+    <div>
+        <label for="">Nom :</label>
+        <input type="text" name="nomEleve" class="infosEleves" id="classNomEleve" placeholder="Nom de l'élève">
+    </div>
+    <div>
+        <label for="">Prénom :</label>
+        <input type="text" name="prenomEleve" class="infosEleves" id="classPrenomEleve" placeholder="Prénom de l'élève">
+    </div>
+    <div>
+        <label for="">Moyenne :</label>
+        <input type="number" name="moyenneEleve" class="infosEleves" id="classMoyenneEleve" placeholder="Moyenne de l'élève">
+    </div>
+    <br>
+    <button class="envoyer">Envoyer au bûcher</button>
+    
+    <h2>Tableau d'élèves</h2>
+    <div class="tabEleve">
+
+        <table id="tableau" class="marge"> 
+            <thead>
+                <tr>
+                    <td>Prénom :</td>
+                    <td>Nom :</td>
+                    <td>Moyenne :</td>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+    
+    
+    
+</div> -->
+
+<h1 class="center">Moyennes élèves</h1>
+
+    <h2 class="center" id="error">Les noms ne doivent pas être vides et la note doit être en 0 et 20.</h2>
+
+    <div class="center marge">
+        <label for="">Prénom</label>
+        <input type="text" id="firstName" placeholder="Prénom de l'élève">
+    </div>
+    <div class="center marge">
+        <label for="">Nom</label>
+        <input type="text" id="name" placeholder="Nom de l'élève">
+    </div>
+
+    <div class="center marge">
+        <label for="">Moyenne générale</label>
+        <input type="number" id="mean" placeholder="Note">
+    </div>
+
+    <div class="center marge">
+        <button id="btn">Envoyer</button>
+    </div>
+<br>
+        <table align="center" id="tableau"  class="marge"> 
+            <thead>
+                <tr >
+                    <td class="tdCOul">Prénom</td>
+                    <td class="tdCOul">Nom</td>
+                    <td class="tdCOul">Moyenne</td>
+                </tr>
+            </thead>
+        </table>
+
+    <h3 class="center">Moyenne de la classe</h3>
+    <p class="center" id="meanClass"></p>
+
+
+
+<script src="jquery-3.6.1.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

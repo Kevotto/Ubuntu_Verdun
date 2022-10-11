@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+td {
+    border: 2px solid black;
+    border-radius: 12%;
+}
+
+.tdCOul{
+    background-color: burlywood;
+    text-align: start;
+}
+
+#error{
+    color: red;
+}
